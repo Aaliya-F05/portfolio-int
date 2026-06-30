@@ -1,0 +1,81 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.timeline-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.group-title {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.group-title::after {
+  content: '';
+  height: 1px;
+  flex: 1;
+  background: var(--card-border);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-item {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.timeline-header h4 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.timeline-header h4 span {
+  color: var(--accent-color);
+}
+
+.timeline-date {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.timeline-school {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.timeline-desc {
+  padding-left: 1.2rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timeline-desc li::marker {
+  color: var(--accent-color);
+}
